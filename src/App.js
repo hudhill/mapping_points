@@ -1,12 +1,12 @@
 import './App.css';
 import React from 'react';
-import Map from './containers/Map'
+import Mapping from './containers/Mapping'
 
 function App() {
 
   return (
     <>
-      <Map />
+      <Mapping />
     </>
   );
 }

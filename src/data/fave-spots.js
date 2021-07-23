@@ -1,5 +1,4 @@
-{"faveSpots":
-[
+const faveSpots = [
   {
     "id": 1,
     "name": "The Spring",
@@ -34,6 +33,8 @@
     "id": 6,
     "name": "The Black Wall",
     "description": "Bouldering spot in the South Quarry of the Salisbury Crags. The Blac Wall Traverse is an Edinburgh classic. v5 left to right, v6 the other way.",
-    "coordinates": []
+    "coordinates": [55.943868, -3.169132]
   }
-]}
+]
+
+export default faveSpots;
