@@ -10,6 +10,11 @@ const Mapping = () => {
     iconSize: [25, 25]
   });
 
+  const toggleCollapse = () => {
+    const collapsible = document.getElementById("collapsible");
+    collapsible.classList.toggle("collapsed")
+  }
+
   return (
   // in the MapContainer initialize view, level of zoom, and whether or not you can scroll
   <MapContainer 
@@ -32,10 +37,11 @@ const Mapping = () => {
             position={spot.coordinates}
           >
             <Popup>
-              <div>
+              <button onClick={toggleCollapse} className="spot">
                 <h3>{spot.name}</h3>
                 <p>{spot.coordinates}</p>
-              </div>
+                <p id="collapsible" className="collapsed">{spot.description}</p>
+              </button>
             </Popup>
           </Marker>
         )
